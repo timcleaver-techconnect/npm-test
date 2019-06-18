@@ -12,11 +12,16 @@ Description
 The repository contains 4 modules and a driver application. Each module is trivial. Each module contains
 a single function that prints out some data. The dependencies are such that:
 ```
+a --depends on--> underscore
+
+b --depends on--> underscore
 b --depends on--> a
 
+c --depends on--> underscore
 c --depends on--> a
 c --depends on--> b
 
+d --depends on--> underscore
 d --depends on--> a
 d --depends on--> b
 d --depends on--> c
