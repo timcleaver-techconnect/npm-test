@@ -22,16 +22,16 @@ test: test_b
 test: test_c
 test: test_d
 
-test_a:
+test_a: build_a
 	cd modules/package-a && node main.js
 
-test_b:
+test_b: build_b
 	cd modules/package-b && node main.js
 
-test_c:
+test_c: build_c
 	cd modules/package-c && node main.js
 
-test_d:
+test_d: build_d
 	cd modules/package-d && node main.js
 
 package: package_a
