@@ -1,0 +1,114 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node@8/8.16.0/bin/node',
+1 verbose cli   '/Users/timothy/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--production' ]
+2 info using npm@6.9.0
+3 info using node@v8.16.0
+4 verbose npm-session f736367a231b8dfc
+5 silly install runPreinstallTopLevelLifecycles
+6 silly preinstall package-c@1.0.0
+7 info lifecycle package-c@1.0.0~preinstall: package-c@1.0.0
+8 silly install loadCurrentTree
+9 silly install readLocalPackageData
+10 timing stage:loadCurrentTree Completed in 19ms
+11 silly install loadIdealTree
+12 silly install cloneCurrentTreeToIdealTree
+13 timing stage:loadIdealTree:cloneCurrentTree Completed in 0ms
+14 silly install loadShrinkwrap
+15 timing stage:loadIdealTree:loadShrinkwrap Completed in 6ms
+16 silly install loadAllDepsIntoIdealTree
+17 http fetch GET 200 https://registry.npmjs.org/underscore 16ms (from cache)
+18 silly pacote range manifest for underscore@^1.9.1 fetched in 24ms
+19 silly resolveWithNewModule underscore@1.9.1 checking installable status
+20 silly pacote directory manifest for package-a@file:../package-a fetched in 3ms
+21 silly resolveWithNewModule package-a@1.0.0 checking installable status
+22 silly pacote range manifest for underscore@^1.9.1 fetched in 2ms
+23 silly resolveWithNewModule underscore@1.9.1 checking installable status
+24 silly pacote range manifest for underscore@^1.9.1 fetched in 1ms
+25 silly resolveWithNewModule underscore@1.9.1 checking installable status
+26 timing stage:loadIdealTree:loadAllDepsIntoIdealTree Completed in 39ms
+27 timing stage:loadIdealTree Completed in 46ms
+28 silly currentTree package-c@1.0.0
+28 silly currentTree ├── package-a@1.0.0
+28 silly currentTree ├─┬ package-b@1.0.0
+28 silly currentTree │ ├── package-a@1.0.0
+28 silly currentTree │ └── underscore@1.9.1
+28 silly currentTree └── underscore@1.9.1
+29 silly idealTree package-c@1.0.0
+29 silly idealTree ├─┬ package-a@1.0.0
+29 silly idealTree │ └── underscore@1.9.1
+29 silly idealTree ├─┬ package-b@1.0.0
+29 silly idealTree │ ├─┬ package-a@1.0.0
+29 silly idealTree │ │ └── underscore@1.9.1
+29 silly idealTree │ └── underscore@1.9.1
+29 silly idealTree └── underscore@1.9.1
+30 silly install generateActionsToTake
+31 silly diff-trees filtering actions: includeDev false includeProd true includeOpt true
+32 timing stage:generateActionsToTake Completed in 4ms
+33 silly diffTrees action count 2
+34 silly diffTrees add underscore@1.9.1
+35 silly diffTrees add underscore@1.9.1
+36 silly decomposeActions action count 16
+37 silly decomposeActions fetch underscore@1.9.1
+38 silly decomposeActions extract underscore@1.9.1
+39 silly decomposeActions preinstall underscore@1.9.1
+40 silly decomposeActions build underscore@1.9.1
+41 silly decomposeActions install underscore@1.9.1
+42 silly decomposeActions postinstall underscore@1.9.1
+43 silly decomposeActions finalize underscore@1.9.1
+44 silly decomposeActions refresh-package-json underscore@1.9.1
+45 silly decomposeActions fetch underscore@1.9.1
+46 silly decomposeActions extract underscore@1.9.1
+47 silly decomposeActions preinstall underscore@1.9.1
+48 silly decomposeActions build underscore@1.9.1
+49 silly decomposeActions install underscore@1.9.1
+50 silly decomposeActions postinstall underscore@1.9.1
+51 silly decomposeActions finalize underscore@1.9.1
+52 silly decomposeActions refresh-package-json underscore@1.9.1
+53 silly install executeActions
+54 silly doSerial global-install 16
+55 verbose correctMkdir /Users/timothy/.npm/_locks correctMkdir not in flight; initializing
+56 verbose lock using /Users/timothy/.npm/_locks/staging-37bf168acf5ed750.lock for /Users/timothy/npm-test/modules/package-c/node_modules/.staging
+57 silly doParallel extract 2
+58 silly extract underscore@1.9.1
+59 silly extract underscore@1.9.1
+60 silly tarball trying underscore@^1.9.1 by hash: sha512-5/4etnCkd9c8gwgowi5/om/mYO5ajCaOgdzj/oW+0eQV9WxKBDZw5+ycmKmeaTXjInS/W0BzpGLo2xR2aBwZdg==
+61 silly tarball trying underscore@^1.9.1 by hash: sha512-5/4etnCkd9c8gwgowi5/om/mYO5ajCaOgdzj/oW+0eQV9WxKBDZw5+ycmKmeaTXjInS/W0BzpGLo2xR2aBwZdg==
+62 silly extract underscore@^1.9.1 extracted to /Users/timothy/npm-test/modules/package-c/node_modules/.staging/underscore-7f5b2d5a (22ms)
+63 silly extract underscore@^1.9.1 extracted to /Users/timothy/npm-test/modules/package-c/node_modules/.staging/underscore-7f5b2d5a (22ms)
+64 timing action:extract Completed in 25ms
+65 silly doReverseSerial unbuild 16
+66 silly doSerial remove 16
+67 silly doSerial move 16
+68 silly doSerial finalize 16
+69 silly finalize /Users/timothy/npm-test/modules/package-a/node_modules/underscore
+70 silly finalize /Users/timothy/npm-test/modules/package-a/node_modules/underscore
+71 timing action:finalize Completed in 10ms
+72 verbose unlock done using /Users/timothy/.npm/_locks/staging-37bf168acf5ed750.lock for /Users/timothy/npm-test/modules/package-c/node_modules/.staging
+73 warn rollback Rolling back underscore@1.9.1 failed (this is probably harmless): /Users/timothy/npm-test/modules/package-a/node_modules/underscore is not a child of /Users/timothy/npm-test/modules/package-c
+74 timing stage:rollbackFailedOptional Completed in 2ms
+75 timing stage:runTopLevelLifecycles Completed in 174ms
+76 silly saveTree package-c@1.0.0
+76 silly saveTree ├─┬ package-a@1.0.0
+76 silly saveTree │ └── underscore@1.9.1
+76 silly saveTree ├─┬ package-b@1.0.0
+76 silly saveTree │ ├─┬ package-a@1.0.0
+76 silly saveTree │ │ └── underscore@1.9.1
+76 silly saveTree │ └── underscore@1.9.1
+76 silly saveTree └── underscore@1.9.1
+77 warn package-c@1.0.0 No description
+78 warn package-c@1.0.0 No repository field.
+79 verbose stack Error: ENOENT: no such file or directory, rename '/Users/timothy/npm-test/modules/package-c/node_modules/.staging/underscore-7f5b2d5a' -> '/Users/timothy/npm-test/modules/package-a/node_modules/underscore'
+80 verbose cwd /Users/timothy/npm-test/modules/package-c
+81 verbose Darwin 17.7.0
+82 verbose argv "/usr/local/Cellar/node@8/8.16.0/bin/node" "/Users/timothy/bin/npm" "install" "--production"
+83 verbose node v8.16.0
+84 verbose npm  v6.9.0
+85 error path /Users/timothy/npm-test/modules/package-c/node_modules/.staging/underscore-7f5b2d5a
+86 error code ENOENT
+87 error errno -2
+88 error syscall rename
+89 error enoent ENOENT: no such file or directory, rename '/Users/timothy/npm-test/modules/package-c/node_modules/.staging/underscore-7f5b2d5a' -> '/Users/timothy/npm-test/modules/package-a/node_modules/underscore'
+90 error enoent This is related to npm not being able to find a file.
+91 verbose exit [ -2, true ]
