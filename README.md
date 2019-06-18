@@ -4,6 +4,8 @@ To demonstrate that the structure works it is sufficient to run `make test`.
 
 To demonstrate the issue run `make package`. It will reliably create an ENOENT issue.
 
+![](https://github.com/timcleaver-techconnect/npm-test/blob/master/tty.gif)
+
 Description
 -----------
 
