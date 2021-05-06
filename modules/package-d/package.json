@@ -12,6 +12,6 @@
     "package-a": "file:../package-a",
     "package-b": "file:../package-b",
     "package-c": "file:../package-c",
-    "underscore": "^1.9.1"
+    "underscore": "^1.12.1"
   }
 }
